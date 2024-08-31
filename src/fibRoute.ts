@@ -7,7 +7,7 @@ export default (req: Request, res: Response): void => {
   const { num } = req.params;
 
   // Ensure num is a string before parsing
-  const parsedNum = parseInt(num as string, 10);
+  const parsedNum = parseInt(num, 10);
 
   const fibN = fibonacci(parsedNum);
   let result = `fibonacci(${parsedNum}) is ${fibN}`;
